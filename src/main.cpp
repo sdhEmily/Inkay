@@ -124,34 +124,6 @@ static const char *get_nintendo_network_message() {
     }
 }
 
-static const char *get_pretendo_message() {
-    // TL note: "Pretendo Network" is also a proper noun - though "Pretendo" alone can refer to us as a project
-    // TL note: "Using" instead of "Connected" is deliberate - we don't know if a successful connection exists, we are
-    // only specifying what we'll *attempt* to connect to
-    switch (get_system_language()) {
-        case nn::swkbd::LanguageType::English:
-        default:
-            return "Using Pretendo Network";
-        case nn::swkbd::LanguageType::Spanish:
-        case nn::swkbd::LanguageType::Portuguese:
-        case nn::swkbd::LanguageType::Italian:
-            return "Usando Pretendo Network";
-        case nn::swkbd::LanguageType::French:
-            return "Sur Pretendo Network";
-        case nn::swkbd::LanguageType::German:
-            return "Nutze Pretendo Network";
-        case nn::swkbd::LanguageType::SimplifiedChinese:
-        case nn::swkbd::LanguageType::TraditionalChinese:
-            return "使用 Pretendo Network";
-        case nn::swkbd::LanguageType::Japanese:
-            return "Pretendoネットワークを使用中";
-        case nn::swkbd::LanguageType::Dutch:
-            return "Pretendo Network wordt gebruikt";
-        case nn::swkbd::LanguageType::Russian:
-            return "Используется Pretendo Network";
-    }
-}
-
 INITIALIZE_PLUGIN() {
     WHBLogCafeInit();
     WHBLogUdpInit();
