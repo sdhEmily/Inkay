@@ -199,8 +199,6 @@ INITIALIZE_PLUGIN() {
         Mocha_IOSUKernelWrite32(0xE24B3D90, 4);
 
         DEBUG_FUNCTION_LINE_VERBOSE("Pretendo URL and NoSSL patches applied successfully.");
-
-        ShowNotification(get_pretendo_message());
     } else {
         DEBUG_FUNCTION_LINE_VERBOSE("Pretendo URL and NoSSL patches skipped.");
 
