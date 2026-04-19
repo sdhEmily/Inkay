@@ -150,7 +150,7 @@ static void Inkay_Initialize(bool apply_patches) {
 
         DEBUG_FUNCTION_LINE_VERBOSE("Pretendo URL and NoSSL patches applied successfully.");
 
-        ShowNotification(get_pretendo_message());
+        //ShowNotification(get_pretendo_message());
         Config::initialized = true;
     } else {
         DEBUG_FUNCTION_LINE_VERBOSE("Pretendo URL and NoSSL patches skipped.");
